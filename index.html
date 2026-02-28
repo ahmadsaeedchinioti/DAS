@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dar-e-Arqam School, Chiniot | Nurturing Excellence</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- AOS Library for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Side Drawer -->
+    <aside id="side-drawer" class="drawer">
+        <div class="drawer-header">
+            <div class="logo">
+                <i class="fas fa-book-open"></i> Dar-e-Arqam
+            </div>
+        </div>
+        <div class="drawer-content">
+            <ul class="drawer-nav">
+                <li><a href="#" class="nav-item" data-target="home"><i class="fas fa-home"></i> <span
+                            class="translatable" data-en="Home" data-ur="گھر">Home</span></a></li>
+                <li><a href="#features" class="nav-item" data-target="home"><i class="fas fa-star"></i> <span
+                            class="translatable" data-en="Features" data-ur="خصوصیات">Features</span></a></li>
+                <li class="has-submenu">
+                    <button class="submenu-toggle"><i class="fas fa-building"></i> <span class="translatable"
+                            data-en="Our Branches" data-ur="ہماری شاخیں">Our Branches</span> <i
+                            class="fas fa-chevron-down toggle-icon"></i></button>
+                    <ul class="submenu">
+                        <li><a href="#" class="branch-select" data-branch="mandar"><i class="fas fa-map-marker-alt"></i>
+                                <span class="translatable" data-en="Mandar Road" data-ur="مندر روڈ">Mandar
+                                    Road</span></a></li>
+                        <li><a href="#" class="branch-select" data-branch="karmabad"><i
+                                    class="fas fa-map-marker-alt"></i> <span class="translatable" data-en="Karmabad"
+                                    data-ur="کرم آباد">Karmabad</span></a></li>
+                        <li><a href="#" class="branch-select" data-branch="mouzam"><i class="fas fa-map-marker-alt"></i>
+                                <span class="translatable" data-en="Mouzam Shah Road" data-ur="معظم شاہ روڈ">Mouzam Shah
+                                    Road</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact" class="nav-item" data-target="home"><i class="fas fa-envelope"></i> <span
+                            class="translatable" data-en="Contact" data-ur="رابطہ">Contact</span></a></li>
+            </ul>
+
+            <div class="drawer-section">
+                <h4 class="drawer-subheader">Language</h4>
+                <div class="language-options">
+                    <label class="lang-radio-label">
+                        <input type="radio" name="language" value="en" class="lang-radio" checked>
+                        <span>English</span>
+                    </label>
+                    <label class="lang-radio-label urdu-text">
+                        <input type="radio" name="language" value="ur" class="lang-radio">
+                        <span>اردو</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="drawer-section theme-section">
+                <span class="theme-label"><i class="fas fa-moon"></i> Dark Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </aside>
+
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i> Dar-e-Arqam
+            </div>
+            <div class="mobile-menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main id="main-content">
+        <!-- Home View -->
+        <div id="home-view" class="view active">
+            <!-- Hero Section -->
+            <section class="hero" id="home">
+                <div class="hero-overlay"></div>
+                <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="translatable" data-en="Nurturing Excellence in Chiniot"
+                        data-ur="چنیوٹ میں شاندار تعلیم و تربیت">Nurturing Excellence in Chiniot</h1>
+                    <p class="translatable"
+                        data-en="A blend of modern education and Islamic values shaping the leaders of tomorrow."
+                        data-ur="جدید تعلیم اور اسلامی اقدار کا حسین امتزاج جو کل کے معماروں کی تشکیل کرتا ہے۔">A blend
+                        of modern education and Islamic values shaping the leaders of tomorrow.</p>
+                    <a href="#contact" class="btn btn-primary translatable" data-en="Admission Open 2026"
+                        data-ur="داخلے جاری ہیں 2026">Admission Open 2026</a>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section section-padding" id="features">
+                <div class="container">
+                    <div class="section-header" data-aos="fade-up">
+                        <h2 class="translatable" data-en="Why Choose Us?" data-ur="ہمیں کیوں منتخب کریں؟">Why Choose Us?
+                        </h2>
+                        <div class="divider"></div>
+                        <p class="translatable"
+                            data-en="We provide a comprehensive educational experience focused on holistic development."
+                            data-ur="ہم جامع ترقی پر مرکوز ایک مکمل تعلیمی تجربہ فراہم کرتے ہیں۔">We provide a
+                            comprehensive educational experience focused on holistic development.</p>
+                    </div>
+
+                    <div class="features-grid">
+                        <!-- Feature 1 -->
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-icon">
+                                <i class="fas fa-quran"></i>
+                            </div>
+                            <h3 class="translatable" data-en="Hifz-e-Quran" data-ur="حفظ القرآن">Hifz-e-Quran</h3>
+                            <p class="translatable"
+                                data-en="Dedicated program for memorization of the Holy Quran with proper Tajweed along with regular academics."
+                                data-ur="باقاعدہ تعلیم کے ساتھ ساتھ تجوید کے ساتھ حفظ قرآن کا خصوصی پروگرام۔">Dedicated
+                                program for memorization of the Holy Quran with proper Tajweed along with regular
+                                academics.</p>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <h3 class="translatable" data-en="Science Lab" data-ur="سائنس لیب">Science Lab</h3>
+                            <p class="translatable"
+                                data-en="State-of-the-art laboratories to foster practical learning and scientific inquiry among students."
+                                data-ur="طلباء میں عملی سیکھنے اور سائنسی تحقیق کو فروغ دینے کے لیے جدید ترین لیبارٹریاں۔">
+                                State-of-the-art laboratories to foster practical learning and scientific inquiry among
+                                students.
+                            </p>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="feature-icon">
+                                <i class="fas fa-hands-holding-child"></i>
+                            </div>
+                            <h3 class="translatable" data-en="Character Building" data-ur="کردار سازی">Character
+                                Building</h3>
+                            <p class="translatable"
+                                data-en="Focusing on moral values, ethics, and Tarbiyah to develop responsible and compassionate citizens."
+                                data-ur="ذمہ دار اور بااخلاق شہری تیار کرنے کے لیے اخلاقی اقدار اور تربیت پر توجہ۔">
+                                Focusing on moral values, ethics, and Tarbiyah to develop responsible and compassionate
+                                citizens.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Branches Section -->
+            <section class="branches-section section-padding bg-light" id="branches">
+                <div class="container">
+                    <div class="section-header" data-aos="fade-up">
+                        <h2 class="translatable" data-en="Our Branches in Chiniot" data-ur="چنیوٹ میں ہماری شاخیں">Our
+                            Branches in Chiniot</h2>
+                        <div class="divider"></div>
+                        <p class="translatable" data-en="Find a campus near you for convenient and quality education."
+                            data-ur="آسان اور معیاری تعلیم کے لیے اپنے قریب ترین کیمپس تلاش کریں۔">Find a campus near
+                            you for convenient and quality education.</p>
+                    </div>
+
+                    <div class="branches-container" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Branch 1 -->
+                        <div class="branch-card">
+                            <div class="branch-image branch-1"></div>
+                            <div class="branch-content">
+                                <h3 class="translatable" data-en="Mandar Road Campus" data-ur="مندر روڈ کیمپس">Mandar
+                                    Road Campus</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <span class="translatable"
+                                        data-en="Main Mandar Road, Chiniot" data-ur="مین مندر روڈ، چنیوٹ">Main Mandar
+                                        Road, Chiniot</span></p>
+                                <a href="#" class="branch-link branch-select" data-branch="mandar"><span
+                                        class="translatable" data-en="View Details" data-ur="تفصیلات دیکھیں">View
+                                        Details</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Branch 2 -->
+                        <div class="branch-card">
+                            <div class="branch-image branch-2"></div>
+                            <div class="branch-content">
+                                <h3 class="translatable" data-en="Karmabad Campus" data-ur="کرم آباد کیمپس">Karmabad
+                                    Campus</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <span class="translatable"
+                                        data-en="Karmabad Area, Chiniot" data-ur="کرم آباد، چنیوٹ">Karmabad Area,
+                                        Chiniot</span></p>
+                                <a href="#" class="branch-link branch-select" data-branch="karmabad"><span
+                                        class="translatable" data-en="View Details" data-ur="تفصیلات دیکھیں">View
+                                        Details</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Branch 3 -->
+                        <div class="branch-card">
+                            <div class="branch-image branch-3"></div>
+                            <div class="branch-content">
+                                <h3 class="translatable" data-en="Mouzam Shah Road Campus" data-ur="معظم شاہ روڈ کیمپس">
+                                    Mouzam Shah Road Campus</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> <span class="translatable"
+                                        data-en="Mouzam Shah Road, Chiniot" data-ur="معظم شاہ روڈ، چنیوٹ">Mouzam Shah
+                                        Road, Chiniot</span></p>
+                                <a href="#" class="branch-link branch-select" data-branch="mouzam"><span
+                                        class="translatable" data-en="View Details" data-ur="تفصیلات دیکھیں">View
+                                        Details</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Branch Details View -->
+        <div id="branch-view" class="view" style="display: none;">
+            <div class="container section-padding">
+                <button class="btn btn-secondary nav-item" data-target="home" style="margin-bottom: 20px;"><i
+                        class="fas fa-arrow-left"></i> <span class="translatable" data-en="Back to Home"
+                        data-ur="ہوم پر واپس جائیں">Back to Home</span></button>
+                <div class="branch-details-card">
+                    <h2 id="branch-title" class="section-title"
+                        style="color: var(--primary-blue); font-size: 2.2rem; margin-bottom: 10px;">Branch Name</h2>
+                    <p id="branch-address" style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 30px;"><i
+                            class="fas fa-map-marker-alt" style="color: var(--primary-yellow);"></i> Address goes here
+                    </p>
+
+                    <div class="map-container" id="branch-map"
+                        style="border-radius: 12px; overflow: hidden; height: 450px; background-color: var(--bg-light);">
+                        <!-- Map embedded via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-col" data-aos="fade-up">
+                <h2><i class="fas fa-book-open"></i> Dar-e-Arqam School</h2>
+                <p class="translatable"
+                    data-en="Nurturing Excellence in Chiniot through quality education and Islamic values."
+                    data-ur="چنیوٹ میں معیاری تعلیم اور اسلامی اقدار کے ذریعے شاندار تربیت۔">Nurturing Excellence in
+                    Chiniot through quality education and Islamic values.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="translatable" data-en="Our Branches" data-ur="ہماری شاخیں">Our Branches</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-chevron-right"></i> <a href="#" class="branch-select"
+                            data-branch="mandar"><span class="translatable" data-en="Mandar Road Campus"
+                                data-ur="مندر روڈ کیمپس">Mandar Road Campus</span></a></li>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#" class="branch-select"
+                            data-branch="karmabad"><span class="translatable" data-en="Karmabad Campus"
+                                data-ur="کرم آباد کیمپس">Karmabad Campus</span></a></li>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#" class="branch-select"
+                            data-branch="mouzam"><span class="translatable" data-en="Mouzam Shah Road Campus"
+                                data-ur="معظم شاہ روڈ کیمپس">Mouzam Shah Road Campus</span></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="translatable" data-en="Contact Us" data-ur="ہم سے رابطہ کریں">Contact Us</h3>
+                <div class="footer-contact-info">
+                    <p><i class="fas fa-phone-alt"></i> 0310 1723588</p>
+                    <p><i class="fas fa-envelope"></i> ultronlightro@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> <span class="translatable" data-en="Mon-Sat: 8:00 AM - 2:00 PM"
+                            data-ur="پیر سے ہفتہ: صبح 8 سے دوپہر 2 بجے">Mon-Sat: 8:00 AM - 2:00 PM</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Dar-e-Arqam School, Chiniot. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
